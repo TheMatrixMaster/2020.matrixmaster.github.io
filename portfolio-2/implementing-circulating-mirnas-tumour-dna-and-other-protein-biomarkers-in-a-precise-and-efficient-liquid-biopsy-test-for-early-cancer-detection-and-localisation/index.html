@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Implementing circulating miRNAs, tumour DNA and other protein biomarkers in a precise and efficient liquid biopsy test for early cancer detection and localisation &#8211; Stephen Lu</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="dns-prefetch" href="//i0.wp.com">
+<link rel="dns-prefetch" href="//i1.wp.com">
+<link rel="dns-prefetch" href="//i2.wp.com">
+<link rel="dns-prefetch" href="//c0.wp.com">
+<link rel="alternate" type="application/rss+xml" title="Stephen Lu &raquo; Feed" href="https://2020.matrixmaster.me/feed/">
+<link rel="alternate" type="application/rss+xml" title="Stephen Lu &raquo; Comments Feed" href="https://2020.matrixmaster.me/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Stephen Lu &raquo; Implementing circulating miRNAs, tumour DNA and other protein biomarkers in a precise and efficient liquid biopsy test for early cancer detection and localisation Comments Feed" href="https://2020.matrixmaster.me/portfolio-2/implementing-circulating-mirnas-tumour-dna-and-other-protein-biomarkers-in-a-precise-and-efficient-liquid-biopsy-test-for-early-cancer-detection-and-localisation/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/2020.matrixmaster.me\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="iheg-fontawesome-css" href="https://2020.matrixmaster.me/wp-content/plugins/image-hover-effects-block//assets/fontawesome-v5/css/all.min.css?ver=1.4.3.1" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://c0.wp.com/c/5.8.2/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<style id="wp-block-library-inline-css" type="text/css">.has-text-align-justify{text-align:justify;}</style>
+<style id="wp-block-library-theme-inline-css" type="text/css">#start-resizable-editor-section{display:none}.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}#end-resizable-editor-section{display:none}</style>
+<link rel="stylesheet" id="iheg-image-hover-css" href="https://2020.matrixmaster.me/wp-content/plugins/image-hover-effects-block/assets/css/style.min.css?ver=1.4.3.1" type="text/css" media="all">
+<link rel="stylesheet" id="mediaelement-css" href="https://c0.wp.com/c/5.8.2/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="https://c0.wp.com/c/5.8.2/wp-includes/js/mediaelement/wp-mediaelement.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="https://2020.matrixmaster.me/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.3" type="text/css" media="all">
+<link rel="stylesheet" id="varia-print-style-css" href="https://2020.matrixmaster.me/wp-content/themes/varia-wpcom/print.css?ver=1.4.5" type="text/css" media="print">
+<link rel="stylesheet" id="stratford-fonts-css" href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C700%7CLato%3A400%2C700%2C400italic%2C700italic%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="stratford-style-css" href="https://2020.matrixmaster.me/wp-content/themes/stratford-wpcom/style.css?ver=1.4.5" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="https://c0.wp.com/p/jetpack/10.4/css/jetpack.css" type="text/css" media="all">
+<script type="text/javascript" id="jetpack_related-posts-js-extra">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://c0.wp.com/p/jetpack/10.4/_inc/build/related-posts/related-posts.min.js" id="jetpack_related-posts-js"></script>
+<link rel="https://api.w.org/" href="https://2020.matrixmaster.me/wp-json/">
+<link rel="alternate" type="application/json" href="https://2020.matrixmaster.me/wp-json/wp/v2/portfolio/283">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://2020.matrixmaster.me/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://2020.matrixmaster.me/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="canonical" href="https://2020.matrixmaster.me/portfolio-2/implementing-circulating-mirnas-tumour-dna-and-other-protein-biomarkers-in-a-precise-and-efficient-liquid-biopsy-test-for-early-cancer-detection-and-localisation/">
+<link rel="shortlink" href="https://2020.matrixmaster.me/?p=283">
+<link rel="alternate" type="application/json+oembed" href="https://2020.matrixmaster.me/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhttps://2020.matrixmaster.me%2Fportfolio-2%2Fimplementing-circulating-mirnas-tumour-dna-and-other-protein-biomarkers-in-a-precise-and-efficient-liquid-biopsy-test-for-early-cancer-detection-and-localisation%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://2020.matrixmaster.me/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhttps://2020.matrixmaster.me%2Fportfolio-2%2Fimplementing-circulating-mirnas-tumour-dna-and-other-protein-biomarkers-in-a-precise-and-efficient-liquid-biopsy-test-for-early-cancer-detection-and-localisation%2F&#038;format=xml">
+<meta name="generator" content="Site Kit by Google 1.48.1">
+<script type="text/javascript">
+/* <![CDATA[ */
+var VPData = {"__":{"couldnt_retrieve_vp":"Couldn't retrieve Visual Portfolio ID.","pswp_close":"Close (Esc)","pswp_share":"Share","pswp_fs":"Toggle fullscreen","pswp_zoom":"Zoom in\/out","pswp_prev":"Previous (arrow left)","pswp_next":"Next (arrow right)","pswp_share_fb":"Share on Facebook","pswp_share_tw":"Tweet","pswp_share_pin":"Pin it","fancybox_close":"Close","fancybox_next":"Next","fancybox_prev":"Previous","fancybox_error":"The requested content cannot be loaded. <br \/> Please try again later.","fancybox_play_start":"Start slideshow","fancybox_play_stop":"Pause slideshow","fancybox_full_screen":"Full screen","fancybox_thumbs":"Thumbnails","fancybox_download":"Download","fancybox_share":"Share","fancybox_zoom":"Zoom"},"settingsPopupGallery":{"enable_on_wordpress_images":false,"vendor":"fancybox","deep_linking":false,"deep_linking_url_to_share_images":false,"show_arrows":true,"show_counter":true,"show_zoom_button":true,"show_fullscreen_button":true,"show_share_button":true,"show_close_button":true,"show_thumbs":true,"show_download_button":false,"show_slideshow":false,"click_to_zoom":true},"screenSizes":[320,576,768,992,1200]};
+/* ]]> */
+</script>
+<style type="text/css">img#wpstats{display:none}</style>
+		        <style type="text/css">/* If html does not have either class, do not show lazy loaded images. */
+            html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload {
+                display: none;
+            }</style>
+        <script>
+            document.documentElement.classList.add(
+                'vp-lazyload-enabled'
+            );
+        </script>
+        <link rel="icon" href="https://i0.wp.com/stephenzlu.com/wp-content/uploads/2020/10/cropped-4733EC00-798E-4C42-8B88-7A722AC6F1A6.jpg?fit=32%2C32&#038;ssl=1" sizes="32x32">
+<link rel="icon" href="https://i0.wp.com/stephenzlu.com/wp-content/uploads/2020/10/cropped-4733EC00-798E-4C42-8B88-7A722AC6F1A6.jpg?fit=192%2C192&#038;ssl=1" sizes="192x192">
+<link rel="apple-touch-icon" href="https://i0.wp.com/stephenzlu.com/wp-content/uploads/2020/10/cropped-4733EC00-798E-4C42-8B88-7A722AC6F1A6.jpg?fit=180%2C180&#038;ssl=1">
+<meta name="msapplication-TileImage" content="https://i0.wp.com/stephenzlu.com/wp-content/uploads/2020/10/cropped-4733EC00-798E-4C42-8B88-7A722AC6F1A6.jpg?fit=270%2C270&#038;ssl=1">
+</head>
+
+<body class="portfolio-template-default single single-portfolio postid-283 single-format-standard wp-embed-responsive singular image-filters-enabled elementor-default elementor-kit-196">
+
+
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header alignfull">
+	<div class="site-header-wrapper">
+		<div class="site-branding">
+
+								<p class="site-title"><a href="https://2020.matrixmaster.me/" rel="home">Stephen Lu</a></p>
+			
+				<p class="site-description">
+				&quot;The happiness of your life depends upon the quality of your thoughts&quot; — Marcus Aurelius			</p>
+	</div>
+<!-- .site-branding -->
+			<nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
+
+		<input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="hide-visually">
+		<label for="toggle" id="toggle-menu" class="button">
+			Menu			<span class="dropdown-icon open">+</span>
+			<span class="dropdown-icon close">&times;</span>
+			<span class="hide-visually expanded-text">expanded</span>
+			<span class="hide-visually collapsed-text">collapsed</span>
+		</label>
+
+		<div class="menu-primary-container"><ul id="menu-primary-1" class="main-menu" aria-label="submenu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-49"><a href="https://2020.matrixmaster.me/">About me</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-137">
+<a href="https://2020.matrixmaster.me/portfolio/" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a href="https://2020.matrixmaster.me/portfolio/">Projects</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277"><a href="https://2020.matrixmaster.me/awards/">Awards</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a href="https://2020.matrixmaster.me/press/">Press</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-271"><a href="https://2020.matrixmaster.me/speaking/">Speaking</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-50"><a href="https://2020.matrixmaster.me/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-136"><a href="https://2020.matrixmaster.me/contact/">Contact</a></li>
+</ul></div>	</nav><!-- #site-navigation -->
+	</div>
+</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+			
+<article id="post-283" class="post-283 portfolio type-portfolio status-publish format-standard has-post-thumbnail hentry portfolio_category-research entry">
+
+	<header class="entry-header responsive-max-width">
+		<h1 class="entry-title">Implementing circulating miRNAs, tumour DNA and other protein biomarkers in a precise and efficient liquid biopsy test for early cancer detection and localisation</h1>				<div class="entry-meta">
+					</div>
+<!-- .meta-info -->
+			</header>
+
+	
+			<figure class="post-thumbnail">
+				<img width="1568" height="1045" src="https://i1.wp.com/stephenzlu.com/wp-content/uploads/2021/02/pexels-photo-356040.jpeg?fit=1568%2C1045&amp;ssl=1" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="adult biology chemical chemist" loading="lazy" srcset="https://i1.wp.com/stephenzlu.com/wp-content/uploads/2021/02/pexels-photo-356040.jpeg?w=1880&amp;ssl=1 1880w, https://i1.wp.com/stephenzlu.com/wp-content/uploads/2021/02/pexels-photo-356040.jpeg?resize=300%2C200&amp;ssl=1 300w, https://i1.wp.com/stephenzlu.com/wp-content/uploads/2021/02/pexels-photo-356040.jpeg?resize=1024%2C682&amp;ssl=1 1024w, https://i1.wp.com/stephenzlu.com/wp-content/uploads/2021/02/pexels-photo-356040.jpeg?resize=768%2C512&amp;ssl=1 768w, https://i1.wp.com/stephenzlu.com/wp-content/uploads/2021/02/pexels-photo-356040.jpeg?resize=500%2C333&amp;ssl=1 500w, https://i1.wp.com/stephenzlu.com/wp-content/uploads/2021/02/pexels-photo-356040.jpeg?resize=800%2C533&amp;ssl=1 800w, https://i1.wp.com/stephenzlu.com/wp-content/uploads/2021/02/pexels-photo-356040.jpeg?resize=1280%2C853&amp;ssl=1 1280w, https://i1.wp.com/stephenzlu.com/wp-content/uploads/2021/02/pexels-photo-356040.jpeg?resize=1536%2C1024&amp;ssl=1 1536w, https://i1.wp.com/stephenzlu.com/wp-content/uploads/2021/02/pexels-photo-356040.jpeg?resize=1568%2C1045&amp;ssl=1 1568w, https://i1.wp.com/stephenzlu.com/wp-content/uploads/2021/02/pexels-photo-356040.jpeg?w=1800&amp;ssl=1 1800w" sizes="(max-width: 1568px) 100vw, 1568px">			</figure><!-- .post-thumbnail -->
+
+		
+	<div class="entry-content">
+		
+<h6 class="has-text-align-center">Stephen Z. Lu, Justin Lacoste</h6>
+
+
+
+<h6>Abstract</h6>
+
+
+
+<p class="has-text-align-justify">Past research focused on liquid biopsy tests diagnosing and localizing cancers have built much promise in this technique to uncover early stage tumours before metastasis. However, many issues such as low test accuracy, high false positive rates and over-diagnosis have prevented this test from being adopted. In this article, we propose and justify the potential use of circulating miRNAs and tumour derived exosomes to solve the problems announced above. Furthermore, we present the results of a promising neural network to boost the accuracy and efficiency of a liquid biopsy test for early cancer detection and localisation.</p>
+
+
+
+<h6>Introduction</h6>
+
+
+
+<p><strong><em>John Hopkins’ CancerSEEK</em></strong></p>
+
+
+
+<p class="has-text-align-justify">Earlier this year, a team of researchers from John Hopkins University have taken a big step in one of the new fields in biomedical research: a blood test that can detect cancer tumours in its earlier stages. By analyzing the plasma of 1005 patients diagnosed with stage I to III cancers as well as 812 healthy individuals, the test was able to positively identify 63% of the cancer patients and had 3 false positive predictions. The algorithm, named CancerSEEK, also faced the challenge of determining the location of the tumour out of the eight types of cancers chosen for the study. Considering the top two predictions for each patient, the median sensitivity for this second task was 83%.<sup>[1]</sup></p>
+
+
+
+<p class="has-text-align-justify">To achieve these results, the team at John Hopkins based their algorithm on the data collected from circulating tumour DNA and 40 known humoral protein biomarkers. The ctDNA was analyzed using qualitative digital PCR with 61 primers targeting mutations in 16 genes. The concentration of the plasma proteins was then evaluated with the Bioplex 200 platform using Luminex bead-based immunoassays.<sup>[1]</sup></p>
+
+
+
+<p class="has-text-align-justify">Following its publication, the ground-breaking study received much praise, but a few critics have raised some questions. Firstly, the cancer-related proteins used by the test are also present in people with inflammatory diseases such as arthritis. This means that the false positive rate will very likely be higher in less healthy populations, creating unsought stressful situations. Furthermore, the 1005 cancer patients used in the study already had cancer symptoms, suggesting CancerSEEK probably won’t work as well in asymptomatic patients whose smaller tumours may shed less DNA. In fact, the test picked up only 43% of very early, stage 1 cancers. Secondly, some researchers think that the test might detect small tumours that would never grow large enough to cause problems yet will be treated anyway. This over-diagnosis problem would cost patients unnecessary time, risk, anxiety and money.<sup>[2-4]</sup></p>
+
+
+
+<h6><strong>Method and Analysis</strong></h6>
+
+
+
+<p><strong><em>Circulating miRNAs</em></strong></p>
+
+
+
+<p class="has-text-align-justify">To overcome these problems, profiling the expression levels of tumour related circulating miRNAs could increase the sensitivity and specificity of the CancerSEEK test, thus reducing the number of false positives and improving the detection rate of early stage cancers. Past research has proven the promising potential of circulating miRNAs as an early biomarker in a wide variety of cancers.<sup>[5-10]</sup>&nbsp;These small noncoding molecules, measuring on average 22 nucleotides, have been demonstrated to play an important role in the multi-step process of carcinogenesis either by taking on oncogenic or tumour suppressor functions.<sup>[11][12]</sup>&nbsp;In 2005, a study conducted by Lu&nbsp;<em>et al.</em>&nbsp;showed that miRNA expression could be used to differentiate cancer cell lines from normal tissues.<sup>[6]</sup>&nbsp;Accordingly, they constructed a tumour/normal classifier from human samples and obtained perfect accuracy when testing on the miRNA profiles of mice with lung adenocarcinomas. Additionally, Rosenfeld&nbsp;<em>et al.</em>&nbsp;found that the pattern of miRNA expression in cancer patients was highly correlated with the tumour’s developmental history. After measuring the expression of 48 human miRNAs, they built a decision tree that correctly localized 80% of non-metastatic tumours on its first prediction. Not only is this result significantly better than CancerSEEK’s, the dataset used in this study was based on just 401 samples and covered a total of 22 types of cancers.<sup>[6]</sup>&nbsp;These findings strongly suggest that adding key miRNAs to CancerSEEK could greatly increase its accuracy in early cancer diagnosis and tumour localisation.</p>
+
+
+
+<p><strong><em>Tumour derived exosomes</em></strong></p>
+
+
+
+<p>Additionally, some studies have suggested that tumour derived (TD) exosomes also carry potential biomarkers like proteins and miRNAs whose expression levels differ from those found in the plasma or serum.<sup>[14][15]</sup>&nbsp;In fact, there is emerging evidence that TD exosomes are essential to developing a fertile environment for tumour proliferation, angiogenesis, invasion and premetastatic niche preparation.<sup>[16-18]</sup>&nbsp;Therefore, timely isolation and analysis of TD exosomes through techniques like polymeric precipitation (ExoQuick) and qRT-PCR could greatly improve CancerSEEK’s ability to detect early tumour formation.<sup>[13]</sup>&nbsp;Accordingly, a list of circulating miRNAs present in the blood was identified (Table 1) whose potential as cancer biomarkers has been clearly documented in the past.<sup>[8][19-39]</sup>&nbsp;</p>
+
+
+
+<p class="has-text-align-center"><em>Table 1: Potential Biomarker miRNAs in 17 Types of Cancer</em></p>
+
+
+
+<p class="has-text-align-center"><img loading="lazy" src="https://lh3.googleusercontent.com/WzRtONSprE_Y2PXFaBMY1Abwrj9x6IQhG88C0fntJefH4erd_Dd0BEK_0w5eanzy3HMDmizlJ4i62Z-nQtczmJBtRXPkQHUe_COwnKX5mNiF3SRtHLNL4dCRHVnoG7KymTYlHj6l" width="647" height="634"></p>
+
+
+
+<p><strong><em>Over-diagnosis solutions</em></strong></p>
+
+
+
+<p class="has-text-align-justify">Regarding the over-diagnosis issue, this problem can be solved by taking a few extra measures. Through the expansion of the dataset, the addition of relevant features as proposed above and the collection of more personal patient information such as treatment duration, type and success, the classification algorithm will see an increase in accuracy and could even be trained to predict patient survival rate or suggest the most beneficial treatment methods, if any. Another interesting way to tackle the over-diagnosis problem would be tumour tissue sequencing after the initial localisation by CancerSEEK. By doing so, the algorithm can be fed more data on the cancer phenotype that wasn’t detectable in the liquid biopsy phase. Information such as tumour size, invasiveness and driver gene mutations collected from tumour profiling could greatly improve the algorithm’s ability to differentiate small benign tumours from malignant ones that need immediate treatment.</p>
+
+
+
+<h6>Results</h6>
+
+
+
+<p><strong><em>Advantages of a Neural Network</em></strong></p>
+
+
+
+<p class="has-text-align-justify">Finally, analyzing the dataset with different machine learning models could also enhance the accuracy and results of the algorithm. In the original study, the John Hopkins researchers employed a logistic regression model to separate cancer patients from healthy ones. This method was based on the data collected from the circulating tumour DNA and 8 of the 40 plasma proteins.<sup>[1]</sup>&nbsp;To improve the model, the use of a neural network to classify this data could be beneficial since deep learning algorithms can implicitly detect complex relationships between variables and do not require any handpicking.<sup>[40]</sup>&nbsp;This maximises the potential of the dataset while eliminating the issue of potential false positive predictions resulting from uncorrelated or useless data. Following this logic, the entirety of the dataset was analyzed (ctDNA and 40 plasma proteins) using a sequential neural network from the Keras module in Python and achieved an overall accuracy score of 97%, correctly identifying 968 of the 1005 cancer patients with only 20 false positive results (Figure 1).</p>
+
+
+
+<p class="has-text-align-center"><img loading="lazy" src="https://lh4.googleusercontent.com/o12nRa52v82a97AQfWAF_8MGkGSOn-uDSpHlTg0iDgYeDaIHBS9lvMzR6AdKQStXM-XAXRvnNcFhHv8sAfagEYW2PLyzmhnIqDpUMow7RsKOs5cP-Lg0BbU0Egl9w_elsRfod8_9" width="624" height="483"></p>
+
+
+
+<p><strong>Conclusion</strong></p>
+
+
+
+<p class="has-text-align-justify">In conclusion, CancerSEEK is a big breakthrough in the biomedical field that carries enormous potential for the early diagnosis of tumourigenesis in patients. However, many issues must be solved before this type of universal blood test can be used with success in a real-world setting. After researching through documentation about cancer biomarkers, we suggest that the analysis of miRNAs present in the serum, plasma or exosomes can improve the detection of early cancers. Additionally, expanding the database, curating patient information, tumour profiling and testing other machine learning models are all approaches that could potentially increase the algorithm accuracy and specificity, allowing it to predict extremely useful information such as patient OS and treatment efficacy.</p>
+
+
+
+<h6>References</h6>
+
+
+
+<ol>
+<li>J. D. Cohen et al., Detection and localization of surgically resectable cancers with a multi- analyte blood test. Science 10.1126/science.aar3247 (2018).</li>
+<li>J. Kaiser, ‘Liquid biopsy’ for cancer promises early detection. Science 10.1126/science.359.6373.259 (2018).</li>
+<li>A. M. Castellino, CancerSEEK Is ‘Good First Step,’ But More Work Needed. Medscape. Jan 24, 2018.</li>
+<li>J. Jarry, CancerSEEK: Is This the One Cancer Blood Test to Rule Them All? McGill Technology. Feb 1, 2018.</li>
+<li>Kosaka et al., Circulating microRNA in body fluid: a new potential biomarker for cancer diagnosis and prognosis. Cancer Sci. vol.101, 2087-2092. (2010)</li>
+<li>J. Lu, G. Getz, E. A. Miska, E. Alvarez-Saavedra, J. Lamb, D. Peck, A. Sweet-Cordero, B. L. Ebert, R. H. Mak, A. A. Ferrando, J. R. Downing, T. Jacks, H. R. Horvitz &amp; T. R. Golub, MicroRNA expression profiles classify human cancers. Nature, 435, 834-838, (2005)</li>
+<li>N. Rosenfeld, R. Aharonov, E. Meiri, S. Rosenwald, Y. Spector, M. Zepeniuk, H. Benjamin, N. Shabes, S. Tabak, A. Levy, D. Lebanony, Y. Goren, E. Silberschein, N. Targan, A. Ben-Ari, S. Gilad, N. Sion-Vardy, A. Tobar, M. Feinmesser, O. Kharenko, O. Nativ, D. Nass, M. Perelman, A. Yosepovich, B. Shalmon, S. Polak-Charcon, E. Fridman, A. Avniel, I. Bentwich, Z. Bentwich, D. Cohen, A. Chajut &amp; I. Barshack, MicroRNAs accurately identify cancer tissue origin. Nature Biotechnology. 26. 462-469 (2008)</li>
+<li>H. M. Heneghan, N. Miller, A. J. Lowery, K. J. Sweeney, J. Newell &amp; M. J. Kerin, Circulating microRNAs as Novel Minimally Invasive Biomarkers for Breast Cancer. Ann Surg 2010;251: 499–505</li>
+<li>J. Hayes, P. P. Peruzzi &amp; S. Lawler, MicroRNAs in cancer: biomarkers, functions and therapy. Trends in Molecular Medicine, August 2014, Vol. 20, No. 8, 460-469</li>
+<li>X. Chen, Y. Ba, L. Ma, X. Cai, Y. Yin, K. Wang, J. Guo, Y. Zhang, J. Chen, X. Guo, Q. Li, X. Li, W. Wang, Y. Zhang, J. Wang, X. Jiang, Y. Xiang, C. Xu, P. Zheng, J. Zhang, R. Li, H. Zhang, X. Shang, T. Gong, G. Ning, J. Wang, K. Zen, J. Zhang, C.-Y. Zhang, Characterization of microRNAs in serum: a novel class of biomarkers for diagnosis of cancer and other diseases. Cell Research (2008) 18:997-1006.</li>
+<li>Bartel DP. MicroRNAs: genomics, biogenesis, mechanism, and function. Cell 2004; 116: 281–97.</li>
+<li>A. Esquela-Kerscher &amp; F. J. Slack, Oncomirs – microRNAs with a role in cancer. Nature Reviews Cancer volume 6, pages 259–269 (2006)</li>
+<li>C. Rolfo et al., Liquid biopsies in lung cancer: The new ambrosia of researchers. Biochimica et Biophysica. Acta 1846 (2014) 539–546</li>
+<li>Z. Wang, J.-Q. Chen, J. Liu &amp; L. Tian, Exosomes in tumor microenvironment: novel transporters and biomarkers. J Transl Med (2016) 14:297</li>
+<li>F. Tian, Y. Shen, Z. Chen, R. Li &amp; Q. Ge, No Significant Difference between Plasma miRNAs and Plasma-Derived Exosomal miRNAs from Healthy People. BioMed Research International. 2017. https://doi.org/10.1155/2017/1304816</li>
+<li>A. S. Azmi, B. Bao &amp; F. H. Sarkar, Exosomes in cancer development, metastasis, and drug resistance: a comprehensive review. Cancer Metastasis Rev, 10.1007/s10555-013-9441-9. (2013)</li>
+<li>H.-G. Zhang &amp; W. E. Grizzle, Exosomes and Cancer: A Newly Described Pathway of Immune Suppression. Clin Cancer Res 2011; 17:959-964</li>
+<li>C. Kahlert &amp; R. Kalluri, Exosomes in tumor microenvironment influence cancer progression and metastasis. J Mol Med (2013) 91:431–437</li>
+<li>C. H. Lawrie, S. Gal, H. M. Dunlop, B. Pushkaran, A. P. Liggins, K. Pulford, A. H. Banham, F. Pezzella, J. Boultwood, J. S. Wainscoat, C. S. R. Hatton &amp; A. L. Harris, Detection of elevated levels of tumour-associated microRNAs in serum of patients with diffuse large B-cell lymphoma. British Journal of Haematology, 141, 672–675</li>
+<li>Zhao H, Shen J, Medico L, Wang D, Ambrosone CB, et al. (2010) A Pilot Study of Circulating miRNAs as Potential Biomarkers of Early Stage Breast Cancer. PLoS ONE 5(10): e13735. doi:10.1371/journal.pone.0013735</li>
+<li>M. D Mattie, C. C Benz, J. Bowers, K. Sensinger, L. Wong, G. K Scott, V. Fedele, D. Ginzinger, R. Getts and C. Haqq. Optimized high-throughput microRNA expression profiling provides novel biomarker assessment of clinical prostate and breast cancer biopsies. Molecular Cancer 2006, 5:24</li>
+<li>E. K. O. Ng, W. W. S. Chong, H. Jin, E. K. Y. Lam, V. Y. Shin, J. Yu, T. C. W. Poon, S. S. M. Ng, J. J. Y. Sung, Differential expression of microRNAs in plasma of patients with colorectal cancer: a potential marker for colorectal cancer screening. Gut 2009;58:1375–1381. doi:10.1136/gut.2008.167817</li>
+<li>Tanaka M, Oikawa K, Takanashi M, Kudo M, Ohyashiki J, et al. (2009) Down-Regulation of miR-92 in Human Plasma Is a Novel Marker for Acute Leukemia Patients. PLoS ONE 4(5): e5532. doi:10.1371/journal.pone.0005532</li>
+<li>W. Zhu, W. Qin, U. Atasoy &amp; E. R. Sauter, Circulating microRNAs in breast cancer and healthy subjects. BMC Research Notes 2009, 2:89</li>
+<li>Z. Hu, X. Chen, Y. Zhao, T. Tian, G. Jin, Y. Shu, Y. Chen, L. Xu, K. Zen, C. Zhang &amp; H. Shen, Serum MicroRNA Signatures Identified in a Genome-Wide Serum MicroRNA Expression Profiling Predict Survival of Non–Small-Cell Lung Cancer. J Clin Oncol 28. (2010) American Society of Clinical Oncology</li>
+<li>J. Wang, J. Chen, P. Chang, et al. MicroRNAs in Plasma of Pancreatic Ductal Adenocarcinoma Patients as Novel Blood-Based Biomarkers of Disease. Cancer Prev Res 2009; 2:807-813.</li>
+<li>A. S. Ho, X. Huang, H. Cao, C. Christman-Skieller, K. Bennewith, Q.-T. Le &amp; A. C. Koong, Circulating miR-210 as a Novel Hypoxia Marker in Pancreatic Cancer, Translational Oncology (2010) 3, 109–113</li>
+<li>Mitchell et al., Circulating microRNAs as stable blood-based markers for cancer detection. PNAS. 105.30. 10513–10518 (2008)</li>
+<li>J. Nilsson, J. Skog, A. Nordstrand, V. Baranov, L. Mincheva-Nilsson, X. O. Breakefield &amp; A. Widmark, Prostate cancer-derived urine exosomes: a novel approach to biomarkers for prostate cancer. British Journal of Cancer (2009) 100(10), 1603 – 1607</li>
+<li>M. Tsujiura et al, Circulating microRNAs in plasma of patients with gastric cancers. British Journal of Cancer (2010) 102, 1174–1179. doi:10.1038/sj.bjc.6605608</li>
+<li>D.D. Taylor &amp; C. Gercel-Taylor, MicroRNA signatures of tumor-derived exosomes as diagnostic biomarkers of ovarian cancer. Gynecologic Oncology 110 (2008) 13–21</li>
+<li>K.E. Resnick et al., The detection of differentially expressed microRNAs from the serum of ovarian cancer patients using a novel real-time PCR platform. Gynecologic Oncology 112 (2009) 55–59</li>
+<li>M. A. Ko, G. Zehong, C. Virtanen, M. Guindi, T. K. Waddell, S. Keshavjee, and G. E. Darling, MicroRNA Expression Profiling of Esophageal Cancer Before and After Induction Chemoradiotherapy. Ann Thorac Surg 2012;94:1094–103</li>
+<li>Homami A, Ghazi F. MicroRNAs as biomarkers associated with bladder cancer. Med J Islam Repub Iran 2016 (29 December). Vol. 30:475</li>
+<li>X. Lin, Z. Wang, R. Zhang &amp; W. Feng, High serum microRNA-335 level predicts aggressive tumor progression and unfavorable prognosis in pediatric acute myeloid leukemia. Clin Transl Oncol. DOI 10.1007/s12094-014-1237-z</li>
+<li>Ruland R, Florea A-M. Are microRNAs key players in epithelial skin cancers? A review focused on basal cell carcinoma and squamous cell carcinoma, Journal of Local and Global Health Science 2014:1 http://dx.doi.org/10.5339/jlghs.2014.1</li>
+<li>JI et al., Overexpression of miR‐155 in clear‐cell renal cell carcinoma and its oncogenic effect through targeting FOXO3a. Experimental and Therapeutic Medicine 13: 2286-2292, 2017</li>
+<li>NMA White et al., miRNA profiling in metastatic renal cell carcinoma reveals a tumour- suppressor effect for miR-215. British Journal of Cancer (2011) 105, 1741 – 1749. doi:10.1038/bjc.2011.401</li>
+<li>Grange et al., Oncogenic micro-RNAs and renal cell carcinoma. Front Oncol. 2014; 4: 49. doi: 10.3389/fonc.2014.00049</li>
+<li>Jack V. Tu, Advantages and Disadvantages of Using Artificial Neural Networks versus Logistic Regression for Predicting Medical Outcomes. J Clin Epidemiol Vol. 49, pp. 1225-1231, 1996</li>
+</ol>
+
+<div id="jp-relatedposts" class="jp-relatedposts">
+	
+</div>	</div>
+<!-- .entry-content -->
+
+	<footer class="entry-footer responsive-max-width">
+			</footer><!-- .entry-footer -->
+
+				
+</article><!-- #post-${ID} -->
+
+<div id="comments" class="comments-area responsive-max-width">
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://2020.matrixmaster.me/portfolio-2/implementing-circulating-mirnas-tumour-dna-and-other-protein-biomarkers-in-a-precise-and-efficient-liquid-biopsy-test-for-early-cancer-detection-and-localisation/#respond" style="display:none;">Cancel reply</a></small>
+</h3>
+<form action="https://2020.matrixmaster.me/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="5" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="283" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+</form>	</div>
+<!-- #respond -->
+		<script type="text/javascript">
+        jQuery( document ).ready( function( $ ) {
+            $( '.comment-form, #registerform' ).append( '<input type="hidden" name="js-spam-prevention" value="9896936e54d134e2543515c99d93173f"/>' );
+        } );
+	</script>
+	
+</div>
+<!-- #comments -->
+
+		</main><!-- #main -->
+	</section><!-- #primary -->
+
+
+	</div>
+<!-- #content -->
+
+		<footer id="colophon" class="site-footer responsive-max-width">
+				<nav class="social-navigation" role="navigation" aria-label="Social Links Menu">
+		<div class="menu-social-links-menu-container"><ul id="menu-social-links-menu" class="social-links-menu">
+<li id="menu-item-55" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55"><a href="mailto:stephen.zwn.lu@gmail.com"><span class="screen-reader-text">Email</span><svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M20,4H4C2.895,4,2,4.895,2,6v12c0,1.105,0.895,2,2,2h16c1.105,0,2-0.895,2-2V6C22,4.895,21.105,4,20,4z M20,8.236l-8,4.882 L4,8.236V6h16V8.236z"></path></svg></a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54"><a target="_blank" rel="noopener" href="https://www.instagram.com/stephen.z.lu/"><span class="screen-reader-text">Instagram</span><svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg></a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a title="fb" target="_blank" rel="noopener" href="https://www.facebook.com/stephen.z.lu/"><span class="screen-reader-text">Facebook</span><svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M20.007,3H3.993C3.445,3,3,3.445,3,3.993v16.013C3,20.555,3.445,21,3.993,21h8.621v-6.971h-2.346v-2.717h2.346V9.31 c0-2.325,1.42-3.591,3.494-3.591c0.993,0,1.847,0.074,2.096,0.107v2.43l-1.438,0.001c-1.128,0-1.346,0.536-1.346,1.323v1.734h2.69 l-0.35,2.717h-2.34V21h4.587C20.555,21,21,20.555,21,20.007V3.993C21,3.445,20.555,3,20.007,3z"></path></svg></a></li>
+<li id="menu-item-110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-110"><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/stephen-lu-02/"><span class="screen-reader-text">LinkedIn</span><svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M19.7,3H4.3C3.582,3,3,3.582,3,4.3v15.4C3,20.418,3.582,21,4.3,21h15.4c0.718,0,1.3-0.582,1.3-1.3V4.3 C21,3.582,20.418,3,19.7,3z M8.339,18.338H5.667v-8.59h2.672V18.338z M7.004,8.574c-0.857,0-1.549-0.694-1.549-1.548 c0-0.855,0.691-1.548,1.549-1.548c0.854,0,1.547,0.694,1.547,1.548C8.551,7.881,7.858,8.574,7.004,8.574z M18.339,18.338h-2.669 v-4.177c0-0.996-0.017-2.278-1.387-2.278c-1.389,0-1.601,1.086-1.601,2.206v4.249h-2.667v-8.59h2.559v1.174h0.037 c0.356-0.675,1.227-1.387,2.526-1.387c2.703,0,3.203,1.779,3.203,4.092V18.338z"></path></svg></a></li>
+</ul></div>	</nav><!-- .social-navigation -->
+		</footer><!-- #colophon -->
+
+</div>
+<!-- #page -->
+
+<script type="text/javascript" src="https://c0.wp.com/p/jetpack/10.4/_inc/build/photon/photon.min.js" id="jetpack-photon-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/5.8.2/wp-includes/js/dist/vendor/regenerator-runtime.min.js" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/5.8.2/wp-includes/js/dist/vendor/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/2020.matrixmaster.me\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://2020.matrixmaster.me/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.3" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/5.8.2/wp-includes/js/comment-reply.min.js" id="comment-reply-js"></script>
+<script type="text/javascript" src="https://2020.matrixmaster.me/wp-content/themes/stratford-wpcom/js/fixed-header-spacing.js?ver=1.4.5" id="stratford-fixed-header-spacing-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/5.8.2/wp-includes/js/wp-embed.min.js" id="wp-embed-js"></script>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	<script src="https://stats.wp.com/e-202252.js" defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:10.4',blog:'183885332',post:'283',tz:'0',srv:'stephenzlu.com'} ]);
+	_stq.push([ 'clickTrackerInit', '183885332', '283' ]);
+</script>
+
+</body>
+
+
+<!-- Page supported by LiteSpeed Cache 4.4.6 on 2022-01-01 23:47:34 -->
+</html>
