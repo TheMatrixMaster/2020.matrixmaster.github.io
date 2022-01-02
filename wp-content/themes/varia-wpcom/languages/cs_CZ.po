@@ -379,7 +379,7 @@ msgstr "Primární"
 #. translators: 1: WordPress link, 2: WordPress.
 #: footer.php:50
 msgid "https://wordpress.org/"
-msgstr "http://cs.wordpress.org/"
+msgstr "https://cs.wordpress.org/"
 
 #: comments.php:66
 msgid "Comments are closed."

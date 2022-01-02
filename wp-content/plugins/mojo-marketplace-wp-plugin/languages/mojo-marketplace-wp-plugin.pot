@@ -28,7 +28,7 @@ msgid "Mike Hansen"
 msgstr ""
 
 #. Author URI of the plugin
-msgid "http://mikehansen.me?utm_campaign=plugin&utm_source=mojo_wp_plugin"
+msgid "https://mikehansen.me?utm_campaign=plugin&utm_source=mojo_wp_plugin"
 msgstr ""
 
 #. translators: %s: installation date

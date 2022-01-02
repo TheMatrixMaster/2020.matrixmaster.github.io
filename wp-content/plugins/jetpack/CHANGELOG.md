@@ -2981,7 +2981,7 @@
 ### Enhancements
 - Add Schema.org markup to the Contact Info Widget.
 - Add a new "Date" field to the Contact Form.
-- Do not show any update notices when in [development mode](http://jetpack.com/support/development-mode).
+- Do not show any update notices when in [development mode](https://jetpack.com/support/development-mode).
 - Improve our documentation to help contributors set up a unit testing environment.
 - Avoid conflicts between Jetpack's Infinite Scroll and other Infinite Scroll plugins.
 - Improvements to the WordPress.com REST API to avoid issues when interacting with your site's categories and tags on WordPress.com.
@@ -3456,7 +3456,7 @@ This release improves Jetpack compatibility with WordPress 4.7.
 - Custom post types have been added to the WP REST API output.
 - Many of the screenshots throughout the plugin have been replaced by SVGs in order to make Jetpack smaller.
 - New endpoints have been added to allow the installation of plugin and theme zip files via the API.
-- Twelve new filters to make Jetpack more extensible!  See: http://wp.me/p5U9nj-2Ow.
+- Twelve new filters to make Jetpack more extensible!  See: https://wp.me/p5U9nj-2Ow.
 - New widget: "Google Translate" to allow users to translate your site into their own language.
 - New widget: "My Community" where you can see who recently interacted with your site.
 - One of the biggest issues facing Jetpack users for years now has been difficulties in moving sites from one domain name to another. This update makes strides towards improving that process.
@@ -4033,7 +4033,7 @@ Jetpack 3.8.1 is here and is fully compatible with WordPress 4.4.
 ## [3.8.0] - 2015-11-04
 
 We're happy to introduce Jetpack 3.8, which has significant contributions from
-the Jetpack community. Read more about it here: http://wp.me/p1moTy-1VN
+the Jetpack community. Read more about it here: https://wp.me/p1moTy-1VN
 
 ### Feature enhancements
 - New Google+ Badge Widget. Display your profile, page, or community Google+
@@ -4213,7 +4213,7 @@ the Jetpack community. Read more about it here: http://wp.me/p1moTy-1VN
 ## [3.6] - 2015-07-06
 ### Feature Enhancements
 - CLI: Add a number of Jetpack CLI improvements: see
-  http://jetpack.com/support/jetpack-cli
+  https://jetpack.com/support/jetpack-cli
 - New Jetpack admin page for connection management
 - New Social Media Icons widget
 - FB Like Box: A visual refresh of the Facebook likebox widget
@@ -4456,7 +4456,7 @@ recommended for all users.
   Photon.
 - Enhancement: JSON API: Add Endpoint for trigger Plugin Autoupdates.
 - Enhancement: JSON API: General Improvements. Documentation on
-  http://developer.wordpress.com/
+  https://developer.wordpress.com/
 - Enhancement: Likes: Updated the code to accept arbitrary CPTs.
 - Enhancement: Related Posts: Allow filter by `post_format`.
 - Enhancement: Sharing: add new `jetpack_sharing_counts` filter for option to
@@ -4497,7 +4497,7 @@ recommended for all users.
 
 - Enhancement: Updated translation files.
 - Enhancement: JSON API: More object vars passed back to some queries.
-  Documentation on http://developer.wordpress.com/
+  Documentation on https://developer.wordpress.com/
 - Bug Fix: JSON API: Pass back correct author in `me/posts` data.
 - Bug Fix: JSON API: Don't check if a post is freshly pressed on remote
   Jetpack sites where the function doesn't exist.
@@ -4833,10 +4833,10 @@ Other bugfixes and enhancements at https://github.com/Automattic/jetpack/commits
 
 ## [2.6] - 2013-11-28
 
-- Enhancement: WPCC / now called [SSO](http://jetpack.com/support/sso/):
+- Enhancement: WPCC / now called [SSO](https://jetpack.com/support/sso/):
   refactored.
 - Enhancement: Monitor: new module which will notify you if your site goes
-  down(http://jetpack.com/support/monitor/).
+  down(https://jetpack.com/support/monitor/).
 - Enhancement: Custom CSS: replace Ace editor with Codemirror.
 - Enhancement: Widgets: new “Display Posts” widget.
 - Enhancement: WP-CLI: add commands to disconnect a site and manage modules.
@@ -5025,7 +5025,7 @@ Other bugfixes and enhancements at https://github.com/Automattic/jetpack/commits
 - Enhancement: Debug: More readable and understandable messages.
 - Enhancement: Likes: Including some MP6 styles.
 - Enhancement: Comments: Add new core classes to comment form. See
-  http://core.trac.wordpress.org/changeset/24525
+  https://core.trac.wordpress.org/changeset/24525
 - Bug Fix: Omnisearch: Don't load everything initially, run the providers off
   admin_init, and then issue an action for folks to hook into.
 - Bug Fix: Omnisearch: Modify some child class functions to match the parent's
@@ -5435,8 +5435,8 @@ Other bugfixes and enhancements at https://github.com/Automattic/jetpack/commits
 - Enhancement: Photon: Apply to all images retrieved from the Media Library.
 - Enhancement: Photon: Retina image support.
 - Enhancement: Custom CSS: Refined editor interface.
-- Enhancement: Custom CSS: Support [Sass](http://sass-lang.com/) and
-  [LESS](http://lesscss.org/) with built-in preprocessors.
+- Enhancement: Custom CSS: Support [Sass](https://sass-lang.com/) and
+  [LESS](https://lesscss.org/) with built-in preprocessors.
 - Enhancement: Open Graph: Better checks for other plugins that may be loading
   Open Graph tags to prevent Jetpack from doubling meta tag output.
 - Bug Fix: Infinite Scroll: Respect relative image dimensions.
@@ -5510,7 +5510,7 @@ Other bugfixes and enhancements at https://github.com/Automattic/jetpack/commits
   notifications of new comments for users that linked their accounts to
   WordPress.com accounts.
 - Enhancement: JSON API: Allows applications to send API requests via
-  WordPress.com (see [the docs](http://developer.wordpress.com/docs/api/) )
+  WordPress.com (see [the docs](https://developer.wordpress.com/docs/api/) )
 - Enhancement: Sync: Modules (that require the data) sync full Post/Comment to
   ensure consistent data on WP.com (eg Stats)
 - Enhancement: Sync: Improve syncing of site options to WP.com
@@ -5662,7 +5662,7 @@ Other bugfixes and enhancements at https://github.com/Automattic/jetpack/commits
 ## [1.5] - 2012-07-31
 
 - Enhancement: Add Gallery Carousel feature
-- Note: the Carousel module bundles http://fgnass.github.com/spin.js/ (MIT
+- Note: the Carousel module bundles https://fgnass.github.com/spin.js/ (MIT
   license)
 
 ## 1.4.2 - 2012-06-20
@@ -5777,7 +5777,7 @@ Other bugfixes and enhancements at https://github.com/Automattic/jetpack/commits
 - Bug Fix: Fixed errors displayed during some upgrades.
 - Bug Fix: Fix inaccurate new modules "bubble" in menu for some upgrades.
 - Bug Fix: Fix VaultPress detection.
-- Bug Fix: Fix link to http://jetpack.com/faq/
+- Bug Fix: Fix link to https://jetpack.com/faq/
 
 ## [1.2] - 2011-11-17
 
@@ -5928,88 +5928,88 @@ Other bugfixes and enhancements at https://github.com/Automattic/jetpack/commits
 [5.6]: https://wp.me/p1moTy-6zt
 [5.5.1]: https://wp.me/p1moTy-6Bd
 [5.5]: https://wp.me/p1moTy-6rk
-[5.4]: http://wp.me/p1moTy-67V
-[5.3]: http://wp.me/p1moTy-5Xv
+[5.4]: https://wp.me/p1moTy-67V
+[5.3]: https://wp.me/p1moTy-5Xv
 [5.2.1]: https://jetpack.com/?p=22686
 [5.2]: https://jetpack.com/?p=22509
 [5.1]: https://jetpack.com/?p=20888
-[5.0]: http://wp.me/p1moTy-5hK
-[4.9]: http://wp.me/p1moTy-4Rl
-[4.8.2]: http://wp.me/p1moTy-4P0
-[4.8.1]: http://wp.me/p1moTy-4N5
-[4.8]: http://wp.me/p1moTy-4gA
-[4.7.1]: http://wp.me/p1moTy-48Y
-[4.7]: http://wp.me/p1moTy-46L
-[4.6]: http://wp.me/p1moTy-40g
-[4.5]: http://wp.me/p1moTy-3Kc
-[4.4.2]: http://wp.me/p1moTy-3JR
-[4.4.1]: http://wp.me/p1moTy-3JR
-[4.4]: http://wp.me/p5U9nj-2Ow
-[4.1]: http://wp.me/p1moTy-3jd
-[4.0.4]: http://wp.me/p1moTy-3eT
-[4.0.3]: http://wp.me/p1moTy-3hm
-[4.0]: http://wp.me/p1moTy-3dL
-[3.9.6]: http://wp.me/p1moTy-3bz
-[3.9.5]: http://wp.me/p1moTy-3bz
-[3.9.4]: http://wp.me/p1moTy-396
-[3.9.3]: http://wp.me/p1moTy-396
-[3.9.2]: http://wp.me/p1moTy-2Ei
-[3.9]: http://wp.me/p1moTy-29R
-[3.8.2]: http://wp.me/p1moTy-26v
-[3.8.1]: http://wp.me/p1moTy-23V
-[3.8.0]: http://wp.me/p1moTy-1VN
-[3.7.2]: http://wp.me/p1moTy-1LB
-[3.7.1]: http://wp.me/p1moTy-1LB
-[3.7.0]: http://wp.me/p1moTy-1JB
-[3.6]: http://wp.me/p1moTy-1ua
-[3.5]: http://wp.me/p1moTy-1jF
-[3.4.3]: http://wp.me/p1moTy-1jb
-[3.4.2]: http://wp.me/p1moTy-1j6
-[3.4]: http://wp.me/p1moTy-1fU
-[3.3]: http://wp.me/p1moTy-1aF
-[3.2]: http://wp.me/p1moTy-181
-[3.1]: http://wp.me/p1moTy-129
-[3.0]: http://wp.me/p1moTy-Wi
-[2.9.3]: http://wp.me/p1moTy-U2
-[2.9]: http://wp.me/p1moTy-RN
-[2.8]: http://wp.me/p1moTy-Pd
-[2.7]: http://wp.me/p1moTy-Mk
-[2.6]: http://wp.me/p1moTy-KE
-[2.5]: http://wp.me/p1moTy-xS
-[2.4]: http://wp.me/p1moTy-wv
-[2.3.5]: http://wp.me/p1moTy-vf
-[2.3.4]: http://wp.me/p1moTy-uL
-[2.3.3]: http://wp.me/p1moTy-uv
-[2.3.2]: http://wp.me/p1moTy-uv
-[2.3.1]: http://wp.me/p1moTy-t9
-[2.3]: http://wp.me/p1moTy-rX
-[2.2.5]: http://wp.me/p1moTy-p8
-[2.2.4]: http://wp.me/p1moTy-oU
-[2.2.3]: http://wp.me/p1moTy-oR
-[2.2.1]: http://wp.me/p1moTy-ob
-[2.2]: http://wp.me/p1moTy-ns
-[2.1.1]: http://wp.me/p1moTy-ng
-[2.1]: http://wp.me/p1moTy-m3
-[2.0.4]: http://wp.me/p1moTy-lT
-[2.0.3]: http://wp.me/p1moTy-lJ
-[2.0.2]: http://wp.me/p1moTy-lu
-[2.0.1]: http://wp.me/p1moTy-lc
-[2.0]: http://wp.me/p1moTy-jg
-[1.9.1]: http://wp.me/p1moTy-iC
-[1.9]: http://wp.me/p1moTy-hC
-[1.8.2]: http://wp.me/p1moTy-gI
-[1.8.1]: http://wp.me/p1moTy-gx
-[1.8]: http://wp.me/p1moTy-fV
-[1.7]: http://wp.me/p1moTy-eq
-[1.6]: http://wp.me/p1moTy-e0
-[1.5]: http://wp.me/p1moTy-d7
-[1.4]: http://wp.me/p1moTy-cz
-[1.3]: http://wp.me/p1moTy-bq
-[1.2.3]: http://wp.me/p1moTy-b4
-[1.2.2]: http://wp.me/p1moTy-ax
-[1.2.1]: http://wp.me/p1moTy-9H
-[1.2]: http://wp.me/p1moTy-8x
-[1.1.3]: http://wp.me/p1moTy-90
-[1.1.2]: http://wp.me/p1moTy-8B
-[1.1.1]: http://wp.me/p1moTy-8i
-[1.1]: http://wp.me/p1moTy-7R
+[5.0]: https://wp.me/p1moTy-5hK
+[4.9]: https://wp.me/p1moTy-4Rl
+[4.8.2]: https://wp.me/p1moTy-4P0
+[4.8.1]: https://wp.me/p1moTy-4N5
+[4.8]: https://wp.me/p1moTy-4gA
+[4.7.1]: https://wp.me/p1moTy-48Y
+[4.7]: https://wp.me/p1moTy-46L
+[4.6]: https://wp.me/p1moTy-40g
+[4.5]: https://wp.me/p1moTy-3Kc
+[4.4.2]: https://wp.me/p1moTy-3JR
+[4.4.1]: https://wp.me/p1moTy-3JR
+[4.4]: https://wp.me/p5U9nj-2Ow
+[4.1]: https://wp.me/p1moTy-3jd
+[4.0.4]: https://wp.me/p1moTy-3eT
+[4.0.3]: https://wp.me/p1moTy-3hm
+[4.0]: https://wp.me/p1moTy-3dL
+[3.9.6]: https://wp.me/p1moTy-3bz
+[3.9.5]: https://wp.me/p1moTy-3bz
+[3.9.4]: https://wp.me/p1moTy-396
+[3.9.3]: https://wp.me/p1moTy-396
+[3.9.2]: https://wp.me/p1moTy-2Ei
+[3.9]: https://wp.me/p1moTy-29R
+[3.8.2]: https://wp.me/p1moTy-26v
+[3.8.1]: https://wp.me/p1moTy-23V
+[3.8.0]: https://wp.me/p1moTy-1VN
+[3.7.2]: https://wp.me/p1moTy-1LB
+[3.7.1]: https://wp.me/p1moTy-1LB
+[3.7.0]: https://wp.me/p1moTy-1JB
+[3.6]: https://wp.me/p1moTy-1ua
+[3.5]: https://wp.me/p1moTy-1jF
+[3.4.3]: https://wp.me/p1moTy-1jb
+[3.4.2]: https://wp.me/p1moTy-1j6
+[3.4]: https://wp.me/p1moTy-1fU
+[3.3]: https://wp.me/p1moTy-1aF
+[3.2]: https://wp.me/p1moTy-181
+[3.1]: https://wp.me/p1moTy-129
+[3.0]: https://wp.me/p1moTy-Wi
+[2.9.3]: https://wp.me/p1moTy-U2
+[2.9]: https://wp.me/p1moTy-RN
+[2.8]: https://wp.me/p1moTy-Pd
+[2.7]: https://wp.me/p1moTy-Mk
+[2.6]: https://wp.me/p1moTy-KE
+[2.5]: https://wp.me/p1moTy-xS
+[2.4]: https://wp.me/p1moTy-wv
+[2.3.5]: https://wp.me/p1moTy-vf
+[2.3.4]: https://wp.me/p1moTy-uL
+[2.3.3]: https://wp.me/p1moTy-uv
+[2.3.2]: https://wp.me/p1moTy-uv
+[2.3.1]: https://wp.me/p1moTy-t9
+[2.3]: https://wp.me/p1moTy-rX
+[2.2.5]: https://wp.me/p1moTy-p8
+[2.2.4]: https://wp.me/p1moTy-oU
+[2.2.3]: https://wp.me/p1moTy-oR
+[2.2.1]: https://wp.me/p1moTy-ob
+[2.2]: https://wp.me/p1moTy-ns
+[2.1.1]: https://wp.me/p1moTy-ng
+[2.1]: https://wp.me/p1moTy-m3
+[2.0.4]: https://wp.me/p1moTy-lT
+[2.0.3]: https://wp.me/p1moTy-lJ
+[2.0.2]: https://wp.me/p1moTy-lu
+[2.0.1]: https://wp.me/p1moTy-lc
+[2.0]: https://wp.me/p1moTy-jg
+[1.9.1]: https://wp.me/p1moTy-iC
+[1.9]: https://wp.me/p1moTy-hC
+[1.8.2]: https://wp.me/p1moTy-gI
+[1.8.1]: https://wp.me/p1moTy-gx
+[1.8]: https://wp.me/p1moTy-fV
+[1.7]: https://wp.me/p1moTy-eq
+[1.6]: https://wp.me/p1moTy-e0
+[1.5]: https://wp.me/p1moTy-d7
+[1.4]: https://wp.me/p1moTy-cz
+[1.3]: https://wp.me/p1moTy-bq
+[1.2.3]: https://wp.me/p1moTy-b4
+[1.2.2]: https://wp.me/p1moTy-ax
+[1.2.1]: https://wp.me/p1moTy-9H
+[1.2]: https://wp.me/p1moTy-8x
+[1.1.3]: https://wp.me/p1moTy-90
+[1.1.2]: https://wp.me/p1moTy-8B
+[1.1.1]: https://wp.me/p1moTy-8i
+[1.1]: https://wp.me/p1moTy-7R

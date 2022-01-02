@@ -161,7 +161,7 @@
       var $select = $('form.woocommerce-ordering .orderby');
       var $form_wrap = $('form.woocommerce-ordering');
       var $sel_option = $('form.woocommerce-ordering .orderby option:selected').text();
-      var chevron_svg = '<svg class="si-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M24.958 10.483c-0.534-0.534-1.335-0.534-1.868 0l-7.074 7.074-7.074-7.074c-0.534-0.534-1.335-0.534-1.868 0s-0.534 1.335 0 1.868l8.008 8.008c0.267 0.267 0.667 0.4 0.934 0.4s0.667-0.133 0.934-0.4l8.008-8.008c0.534-0.534 0.534-1.335 0-1.868z"></path></svg>';
+      var chevron_svg = '<svg class="si-icon" version="1.1" xmlns="https://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M24.958 10.483c-0.534-0.534-1.335-0.534-1.868 0l-7.074 7.074-7.074-7.074c-0.534-0.534-1.335-0.534-1.868 0s-0.534 1.335 0 1.868l8.008 8.008c0.267 0.267 0.667 0.4 0.934 0.4s0.667-0.133 0.934-0.4l8.008-8.008c0.534-0.534 0.534-1.335 0-1.868z"></path></svg>';
       $form_wrap.append('<span id="si-orderby"><span>' + $sel_option + '</span>' + chevron_svg + '</span>');
       $select.addClass('custom-select-loaded');
       var $appended = $('#si-orderby');

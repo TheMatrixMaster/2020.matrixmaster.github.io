@@ -6,19 +6,19 @@
     "php dom",
     "HTML parser"
   ],
-  "homepage": "http://simplehtmldom.sourceforge.net/",
+  "homepage": "https://simplehtmldom.sourceforge.net/",
   "license": "MIT",
   "type": "library",
   "authors": [
     {
       "name": "dimabdc",
       "email": "support@titor.ru",
-      "homepage": "http://github.com/dimabdc",
+      "homepage": "https://github.com/dimabdc",
       "role": "Developer"
     },
     {
       "name": "Lars Moelleken",
-      "homepage": "http://www.moelleken.org/",
+      "homepage": "https://www.moelleken.org/",
       "role": "Developer"
     }
   ],

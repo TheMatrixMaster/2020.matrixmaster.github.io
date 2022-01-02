@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Varia 1.5.10\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/varia\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/varia\n"
 "POT-Creation-Date: 2020-12-18 01:44:48+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

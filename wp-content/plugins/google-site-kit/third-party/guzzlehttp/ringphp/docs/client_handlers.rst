@@ -14,7 +14,7 @@ Stream Handler
 ~~~~~~~~~~~~~~
 
 The ``GuzzleHttp\Ring\Client\StreamHandler`` uses PHP's
-`http stream wrapper <http://php.net/manual/en/wrappers.http.php>`_ to send
+`http stream wrapper <https://php.net/manual/en/wrappers.http.php>`_ to send
 requests.
 
 .. note::
@@ -71,7 +71,7 @@ which executes faster and consumes less memory than using PHP's
     This handler cannot send requests concurrently.
 
 When using the CurlHandler, custom curl options can be specified as an
-associative array of `cURL option constants <http://php.net/manual/en/curl.constants.php>`_
+associative array of `cURL option constants <https://php.net/manual/en/curl.constants.php>`_
 mapping to values in the ``client`` option of a requst using the **curl** key.
 
 .. code-block:: php
@@ -100,7 +100,7 @@ cURL Multi Handler
 ~~~~~~~~~~~~~~~~~~
 
 The ``GuzzleHttp\Ring\Client\CurlMultiHandler`` transfers requests using
-cURL's `multi API <http://curl.haxx.se/libcurl/c/libcurl-multi.html>`_. The
+cURL's `multi API <https://curl.haxx.se/libcurl/c/libcurl-multi.html>`_. The
 ``CurlMultiHandler`` is great for sending requests concurrently.
 
 .. code-block:: php

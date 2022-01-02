@@ -274,7 +274,7 @@ msgstr "Principal"
 
 #: footer.php:25
 msgid "https://wordpress.org/"
-msgstr "http://gl.wordpress.org/"
+msgstr "https://gl.wordpress.org/"
 
 #: comments.php:66
 msgid "Comments are closed."

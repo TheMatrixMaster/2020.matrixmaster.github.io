@@ -269,7 +269,7 @@ msgstr "İkincil"
 #. translators: 1: WordPress link, 2: WordPress.
 #: footer.php:49
 msgid "https://wordpress.org/"
-msgstr "http://wordpress.org/"
+msgstr "https://wordpress.org/"
 
 #: functions.php:59
 #: functions.php:153

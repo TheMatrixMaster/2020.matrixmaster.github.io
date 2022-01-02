@@ -78,7 +78,7 @@ If you use remi, you can use the new ICU.
 ## Length validation ##
 
 twitter-text 3.0 updates the config file with `emojiParsingEnabled` config option.
-When true, twitter-text-php will parse and discount emoji supported by the [Unicode Emoji 11.0](http://www.unicode.org/emoji/charts-11.0) (NOTE: Original [twitter-text](https://github.com/twitter/twitter-text) supported [twemoji library](https://github.com/twitter/twemoji)).
+When true, twitter-text-php will parse and discount emoji supported by the [Unicode Emoji 11.0](https://www.unicode.org/emoji/charts-11.0) (NOTE: Original [twitter-text](https://github.com/twitter/twitter-text) supported [twemoji library](https://github.com/twitter/twemoji)).
 The length of these emoji will be the default weight (200 or two characters) even if they contain multiple code points combined by zero-width joiners.
 This means that emoji with skin tone and gender modifiers no longer count as more characters than those without such modifiers.
 

@@ -256,7 +256,7 @@ msgstr "Sekundārais"
 
 #: footer.php:25
 msgid "https://wordpress.org/"
-msgstr "http://wordpress.org/"
+msgstr "https://wordpress.org/"
 
 #: functions.php:59
 #: functions.php:153

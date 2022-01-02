@@ -5,7 +5,7 @@ Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 5.6
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Stable tag: trunk
 
 A lightweight and highly customizable multi-purpose theme that makes it easy for anyone to create their perfect website.
@@ -128,10 +128,10 @@ Sinatra is a lightweight and highly customizable multi-purpose theme that makes 
 
 == Resources ==
 Feather Icons, https://feathericons.com/
-Copyright (c) 2013-2017 Cole Bemis, MIT License, http://www.opensource.org/licenses/mit-license.php
+Copyright (c) 2013-2017 Cole Bemis, MIT License, https://www.opensource.org/licenses/mit-license.php
 
 ImagesLoaded, https://imagesloaded.desandro.com/
-Copyright (c) 2019 David DeSandro, MIT License, http://www.opensource.org/licenses/mit-license.php
+Copyright (c) 2019 David DeSandro, MIT License, https://www.opensource.org/licenses/mit-license.php
 
 HTML5 Shiv, https://github.com/aFarkas/html5shiv
 Copyright (c) 2014 Alexander Farkas, MIT/GPL2 License, https://github.com/aFarkas/html5shiv/blob/master/MIT%20and%20GPL2%20licenses.md
@@ -146,10 +146,10 @@ WP Color Picker Alpha, https://github.com/kallookoo/wp-color-picker-alpha
 Copyright (c) Sergio GNU GPL v2 or later, https://opensource.org/licenses/GPL-2.0
 
 Normalize.css, https://necolas.github.io/normalize.css/
-Copyright (c) Nicolas Gallagher and Jonathan Neal, MIT License, http://www.opensource.org/licenses/mit-license.php
+Copyright (c) Nicolas Gallagher and Jonathan Neal, MIT License, https://www.opensource.org/licenses/mit-license.php
 
 Select2, https://select2.org/
-Copyright (c) 2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors, MIT License, http://www.opensource.org/licenses/mit-license.php
+Copyright (c) 2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors, MIT License, https://www.opensource.org/licenses/mit-license.php
 
 Screenshot image by Zachary Nelson (StockSnap.io): https://stocksnap.io/photo/QYPJ92FECM
 CC0 License, https://creativecommons.org/publicdomain/zero/1.0/

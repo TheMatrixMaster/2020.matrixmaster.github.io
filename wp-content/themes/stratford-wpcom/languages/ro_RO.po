@@ -117,7 +117,7 @@ msgstr "Meniu legături sociale"
 
 #: footer.php:47
 msgid "https://wordpress.org/"
-msgstr "http://wordpress.org/"
+msgstr "https://wordpress.org/"
 
 #. translators: %s: WordPress.
 #: footer.php:50

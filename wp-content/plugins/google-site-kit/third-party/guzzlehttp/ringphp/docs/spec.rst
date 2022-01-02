@@ -144,8 +144,8 @@ client
 
         "Debug output" is handler specific: different handlers will yield
         different output and various various level of detail. For example, when
-        using cURL to transfer requests, cURL's `CURLOPT_VERBOSE <http://curl.haxx.se/libcurl/c/CURLOPT_VERBOSE.html>`_
-        will be used. When using the PHP stream wrapper, `stream notifications <http://php.net/manual/en/function.stream-notification-callback.php>`_
+        using cURL to transfer requests, cURL's `CURLOPT_VERBOSE <https://curl.haxx.se/libcurl/c/CURLOPT_VERBOSE.html>`_
+        will be used. When using the PHP stream wrapper, `stream notifications <https://php.net/manual/en/function.stream-notification-callback.php>`_
         will be emitted.
 
     decode_content
@@ -181,7 +181,7 @@ client
                 'client'      => [
                     // Use different proxies for different URI schemes.
                     'proxy' => [
-                        'http'  => 'http://proxy.example.com:5100',
+                        'http'  => 'https://proxy.example.com:5100',
                         'https' => 'https://proxy.example.com:6100'
                     ]
                 ]
@@ -268,7 +268,7 @@ headers
 reason
     (string) Optional reason phrase. This option should be provided when the
     reason phrase does not match the typical reason phrase associated with the
-    ``status`` code. See `RFC 7231 <http://tools.ietf.org/html/rfc7231#section-6.1>`_
+    ``status`` code. See `RFC 7231 <https://tools.ietf.org/html/rfc7231#section-6.1>`_
     for a list of HTTP reason phrases mapped to status codes.
 
 status

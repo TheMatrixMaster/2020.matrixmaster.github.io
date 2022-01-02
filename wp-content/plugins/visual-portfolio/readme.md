@@ -7,7 +7,7 @@
 * Requires PHP: 7.2
 * Stable tag: 2.15.4
 * License: GPLv2 or later
-* License URI: <http://www.gnu.org/licenses/gpl-2.0.html>
+* License URI: <https://www.gnu.org/licenses/gpl-2.0.html>
 
 Modern photo gallery and portfolio plugin with advanced layouts editor. Clean gallery styles with powerful settings in the Gutenberg block.
 

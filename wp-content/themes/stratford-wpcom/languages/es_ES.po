@@ -117,7 +117,7 @@ msgstr "Menú de enlaces sociales"
 
 #: footer.php:47
 msgid "https://wordpress.org/"
-msgstr "http://es.wordpress.org/"
+msgstr "https://es.wordpress.org/"
 
 #: functions.php:30
 msgid "Small"

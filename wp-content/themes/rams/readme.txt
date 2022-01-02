@@ -55,11 +55,11 @@ Source: https://fonts.google.com/specimen/Crimson+Text
 
 Flexslider 2
 License: GPLv2 
-Source: http://flexslider.woothemes.com
+Source: https://flexslider.woothemes.com
 
 screenshot.png post image 
 License: CC0 Public Domain 
-Source: http://www.unsplash.com
+Source: https://www.unsplash.com
 
 
 == Changelog ==

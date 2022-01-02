@@ -322,7 +322,7 @@ msgstr "Secundario"
 #. translators: 1: WordPress link, 2: WordPress.
 #: footer.php:50
 msgid "https://wordpress.org/"
-msgstr "http://es.wordpress.org/"
+msgstr "https://es.wordpress.org/"
 
 #: functions.php:59
 #: functions.php:159

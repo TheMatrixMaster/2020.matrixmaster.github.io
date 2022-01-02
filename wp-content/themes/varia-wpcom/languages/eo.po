@@ -274,7 +274,7 @@ msgstr "Ĉefa"
 
 #: footer.php:25
 msgid "https://wordpress.org/"
-msgstr "http://wordpress.org/"
+msgstr "https://wordpress.org/"
 
 #: comments.php:66
 msgid "Comments are closed."

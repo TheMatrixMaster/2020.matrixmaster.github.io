@@ -134,11 +134,11 @@ msgstr ""
 #: includes/class-simply-static.php:401
 msgid ""
 "Your server does not have the PHP zip extension enabled. Please visit <a "
-"href='http://www.php.net/manual/en/book.zip.php'>the PHP zip extension page</"
+"href='https://www.php.net/manual/en/book.zip.php'>the PHP zip extension page</"
 "a> for more information on how to enable it."
 msgstr ""
 "Votre serveur n'a pas l'extension PHP zip activé. Rendez vous sur <a "
-"href='http://www.php.net/manual/en/book.zip.php'>la page PHP de l'extension "
+"href='https://www.php.net/manual/en/book.zip.php'>la page PHP de l'extension "
 "zip</a> pour plus d'information pour l'activer."
 
 #: includes/class-simply-static.php:409
@@ -433,7 +433,7 @@ msgid "fancy.pdf"
 msgstr "chic.pdf"
 
 #. Plugin URI of the plugin/theme
-msgid "http://codeofconduct.co/simply-static"
+msgid "https://codeofconduct.co/simply-static"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -449,5 +449,5 @@ msgid "Code of Conduct"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://codeofconduct.co/"
+msgid "https://codeofconduct.co/"
 msgstr ""

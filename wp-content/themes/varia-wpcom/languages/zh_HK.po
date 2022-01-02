@@ -260,7 +260,7 @@ msgstr "次要"
 
 #: footer.php:25
 msgid "https://wordpress.org/"
-msgstr "http://tw.wordpress.org/"
+msgstr "https://tw.wordpress.org/"
 
 #: functions.php:59
 #: functions.php:153

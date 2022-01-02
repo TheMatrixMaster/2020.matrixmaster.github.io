@@ -10,7 +10,7 @@
 # :scroll: Simple Html Dom Parser for PHP
 
 A HTML DOM parser written in PHP - let you manipulate HTML in a very easy way!
-This is a fork of [PHP Simple HTML DOM Parser project](http://simplehtmldom.sourceforge.net/) but instead of string manipulation we use DOMDocument and modern php classes like "Symfony CssSelector".
+This is a fork of [PHP Simple HTML DOM Parser project](https://simplehtmldom.sourceforge.net/) but instead of string manipulation we use DOMDocument and modern php classes like "Symfony CssSelector".
 
 - PHP 7.0+ & 8.0 Support
 - PHP-FIG Standard

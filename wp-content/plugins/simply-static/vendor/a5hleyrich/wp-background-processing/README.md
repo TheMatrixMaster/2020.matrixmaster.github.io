@@ -156,7 +156,7 @@ Save and dispatch the queue:
 
 ### BasicAuth
 
-If your site is behind BasicAuth, both async requests and background processes will fail to complete. This is because WP Background Processing relies on the [WordPress HTTP API](http://codex.wordpress.org/HTTP_API), which requires you to attach your BasicAuth credentials to requests. The easiest way to do this is using the following filter:
+If your site is behind BasicAuth, both async requests and background processes will fail to complete. This is because WP Background Processing relies on the [WordPress HTTP API](https://codex.wordpress.org/HTTP_API), which requires you to attach your BasicAuth credentials to requests. The easiest way to do this is using the following filter:
 
 ```php
 function wpbp_http_request_args( $r, $url ) {
@@ -169,4 +169,4 @@ add_filter( 'http_request_args', 'wpbp_http_request_args', 10, 2);
 
 ## License
 
-[GPLv2+](http://www.gnu.org/licenses/gpl-2.0.html)
+[GPLv2+](https://www.gnu.org/licenses/gpl-2.0.html)

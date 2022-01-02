@@ -332,7 +332,7 @@
 				if ( 'https:' === window.location.protocol ) {
 					url = url.replace( /^http:\/\//i, 'https://' );
 				} else {
-					url = url.replace( /^https:\/\//i, 'http://' );
+					url = url.replace( /^https:\/\//i, 'https://' );
 				}
 
 				return url;

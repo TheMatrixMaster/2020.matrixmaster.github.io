@@ -1549,7 +1549,7 @@ __webpack_require__.r(__webpack_exports__);
  * /^[$_\p{L}\p{Nl}][$_\p{L}\p{Nl}\u200C\u200D\p{Mn}\p{Mc}\p{Nd}\p{Pc}]*$/u;
  * ```
  *
- * @see http://www.pixelbeat.org/programming/gcc/format_specs.html
+ * @see https://www.pixelbeat.org/programming/gcc/format_specs.html
  * @see https://mathiasbynens.be/notes/javascript-identifiers#valid-identifier-names
  *
  * @type {RegExp}
@@ -1669,7 +1669,7 @@ function sprintf( string, args ) {
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
   Copyright (c) 2018 Jed Watson.
   Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
+  https://jedwatson.github.io/classnames
 */
 /* global define */
 
@@ -1860,10 +1860,10 @@ function useColors() {
 		return false;
 	}
 
-	// Is webkit? http://stackoverflow.com/a/16459606/376773
+	// Is webkit? https://stackoverflow.com/a/16459606/376773
 	// document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
 	return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
-		// Is firebug? http://stackoverflow.com/a/398120/376773
+		// Is firebug? https://stackoverflow.com/a/398120/376773
 		(typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
 		// Is firefox >= v31?
 		// https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
@@ -2410,10 +2410,10 @@ function useColors() {
 		return false;
 	}
 
-	// Is webkit? http://stackoverflow.com/a/16459606/376773
+	// Is webkit? https://stackoverflow.com/a/16459606/376773
 	// document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
 	return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
-		// Is firebug? http://stackoverflow.com/a/398120/376773
+		// Is firebug? https://stackoverflow.com/a/398120/376773
 		(typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
 		// Is firefox >= v31?
 		// https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
@@ -4707,7 +4707,7 @@ __webpack_require__.r(__webpack_exports__);
 /*
  * Exposes number format capability
  *
- * @copyright Copyright (c) 2013 Kevin van Zonneveld (http://kvz.io) and Contributors (http://phpjs.org/authors).
+ * @copyright Copyright (c) 2013 Kevin van Zonneveld (https://kvz.io) and Contributors (https://phpjs.org/authors).
  * @license See CREDITS.md
  * @see https://github.com/kvz/phpjs/blob/ffe1356af23a6f2512c84c954dd4e828e92579fa/functions/strings/number_format.js
  */
@@ -6037,7 +6037,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
           var err = new Error(
             'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
             'Use `PropTypes.checkPropTypes()` to call them. ' +
-            'Read more at http://fb.me/use-check-prop-types'
+            'Read more at https://fb.me/use-check-prop-types'
           );
           err.name = 'Invariant Violation';
           throw err;
@@ -6466,7 +6466,7 @@ if (true) {
   var ReactIs = __webpack_require__(/*! react-is */ "../../../node_modules/.pnpm/react-is@16.13.1/node_modules/react-is/index.js");
 
   // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
+  // https://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
   module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "../../../node_modules/.pnpm/prop-types@15.7.2/node_modules/prop-types/factoryWithTypeCheckers.js")(ReactIs.isElement, throwOnDirectAccess);
 } else {}
@@ -7114,7 +7114,7 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Jed-formatted locale data.
  *
- * @see http://messageformat.github.io/Jed/
+ * @see https://messageformat.github.io/Jed/
  *
  * @typedef {{[domain:string]:TanninLocaleDomain}} TanninLocaleData
  */
@@ -8194,7 +8194,7 @@ class JetpackLogo extends (react__WEBPACK_IMPORTED_MODULE_3___default().Componen
     } = this.props;
     const viewBox = showText ? '0 0 118 32' : '0 0 32 32';
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("svg", _home_runner_work_jetpack_jetpack_node_modules_pnpm_babel_runtime_7_16_3_node_modules_babel_runtime_helpers_extends_js__WEBPACK_IMPORTED_MODULE_0___default()({
-      xmlns: "http://www.w3.org/2000/svg",
+      xmlns: "https://www.w3.org/2000/svg",
       x: "0px",
       y: "0px",
       viewBox: viewBox,
@@ -11890,7 +11890,7 @@ const Admin = props => {
     registrationNonce: registrationNonce,
     from: "connection-ui",
     redirectUri: "tools.php?page=wpcom-connection-manager",
-    pricingIcon: "data:image/svg+xml,%3Csvg width='32' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m21.092 15.164.019-1.703v-.039c0-1.975-1.803-3.866-4.4-3.866-2.17 0-3.828 1.351-4.274 2.943l-.426 1.524-1.581-.065a2.92 2.92 0 0 0-.12-.002c-1.586 0-2.977 1.344-2.977 3.133 0 1.787 1.388 3.13 2.973 3.133H22.399c1.194 0 2.267-1.016 2.267-2.4 0-1.235-.865-2.19-1.897-2.368l-1.677-.29Zm-10.58-3.204a4.944 4.944 0 0 0-.201-.004c-2.75 0-4.978 2.298-4.978 5.133s2.229 5.133 4.978 5.133h12.088c2.357 0 4.267-1.97 4.267-4.4 0-2.18-1.538-3.99-3.556-4.339v-.06c0-3.24-2.865-5.867-6.4-5.867-2.983 0-5.49 1.871-6.199 4.404Z' fill='%23000'/%3E%3C/svg%3E",
+    pricingIcon: "data:image/svg+xml,%3Csvg width='32' height='32' fill='none' xmlns='https://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m21.092 15.164.019-1.703v-.039c0-1.975-1.803-3.866-4.4-3.866-2.17 0-3.828 1.351-4.274 2.943l-.426 1.524-1.581-.065a2.92 2.92 0 0 0-.12-.002c-1.586 0-2.977 1.344-2.977 3.133 0 1.787 1.388 3.13 2.973 3.133H22.399c1.194 0 2.267-1.016 2.267-2.4 0-1.235-.865-2.19-1.897-2.368l-1.677-.29Zm-10.58-3.204a4.944 4.944 0 0 0-.201-.004c-2.75 0-4.978 2.298-4.978 5.133s2.229 5.133 4.978 5.133h12.088c2.357 0 4.267-1.97 4.267-4.4 0-2.18-1.538-3.99-3.556-4.339v-.06c0-3.24-2.865-5.867-6.4-5.867-2.983 0-5.49 1.871-6.199 4.404Z' fill='%23000'/%3E%3C/svg%3E",
     priceBefore: 9,
     priceAfter: 4.5,
     pricingTitle: __('Jetpack Backup', 'jetpack'),

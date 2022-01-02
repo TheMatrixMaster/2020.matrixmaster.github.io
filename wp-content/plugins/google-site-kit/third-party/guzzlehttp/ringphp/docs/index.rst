@@ -46,5 +46,5 @@ without tying your application to a specific implementation.
 
 RingPHP is inspired by Clojure's `Ring <https://github.com/ring-clojure/ring>`_,
 which, in turn, was inspired by Python's WSGI and Ruby's Rack. RingPHP is
-utilized as the handler layer in `Guzzle <http://guzzlephp.org>`_ 5.0+ to send
+utilized as the handler layer in `Guzzle <https://guzzlephp.org>`_ 5.0+ to send
 HTTP requests.

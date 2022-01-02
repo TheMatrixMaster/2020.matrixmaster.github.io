@@ -9464,7 +9464,7 @@ function ExportInfoModal(props) {
   return /*#__PURE__*/_react.default.createElement(_infoModal.default, (0, _extends2.default)({}, props, {
     title: __('Export a Template Kit', 'elementor')
   }), /*#__PURE__*/_react.default.createElement(_infoModal.default.Section, null, /*#__PURE__*/_react.default.createElement(_infoModal.default.Heading, null, __('What’s a Template Kit?', 'elementor')), /*#__PURE__*/_react.default.createElement(_infoModal.default.Text, null, __('A kit is a zip file containing anything from an entire site to individual components.', 'elementor'))), /*#__PURE__*/_react.default.createElement(_infoModal.default.Section, null, /*#__PURE__*/_react.default.createElement(_infoModal.default.Heading, null, __('How does exporting work?', 'elementor')), /*#__PURE__*/_react.default.createElement(_infoModal.default.Text, null, /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, __('Select what to include from your site. We’ll use that to create a zip file.', 'elementor'), /*#__PURE__*/_react.default.createElement("br", null), __('That’s it!', 'elementor'), " ", /*#__PURE__*/_react.default.createElement(_inlineLink.default, {
-    url: "http://go.elementor.com/app-export-kit"
+    url: "https://go.elementor.com/app-export-kit"
   }, __('Learn More', 'elementor'))))), /*#__PURE__*/_react.default.createElement(_infoModal.default.Section, null, /*#__PURE__*/_react.default.createElement(_infoModal.default.Tip, {
     title: __('Tip!', 'elementor'),
     description: __('Once your download is complete, import your kit to another site and get it up and running quickly.', 'elementor')
@@ -9505,7 +9505,7 @@ function ImportInfoModal(props) {
   return /*#__PURE__*/_react.default.createElement(_infoModal.default, (0, _extends2.default)({}, props, {
     title: __('Import a Template Kit', 'elementor')
   }), /*#__PURE__*/_react.default.createElement(_infoModal.default.Section, null, /*#__PURE__*/_react.default.createElement(_infoModal.default.Heading, null, __('What’s a Template Kit?', 'elementor')), /*#__PURE__*/_react.default.createElement(_infoModal.default.Text, null, __('A kit is a zip file containing anything from an entire site to individual components.', 'elementor'))), /*#__PURE__*/_react.default.createElement(_infoModal.default.Section, null, /*#__PURE__*/_react.default.createElement(_infoModal.default.Heading, null, __('How does importing work?', 'elementor')), /*#__PURE__*/_react.default.createElement(_infoModal.default.Text, null, /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, __('After you select what\'s included from your imported kit, you’ll be able to choose which current site settings should stay and which the import should override. ', 'elementor'), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_inlineLink.default, {
-    url: "http://go.elementor.com/app-import-kit"
+    url: "https://go.elementor.com/app-import-kit"
   }, __('Learn More', 'elementor'))))));
 }
 
@@ -12136,7 +12136,7 @@ module.exports = !__webpack_require__(/*! ./_descriptors */ "../node_modules/cor
   \**********************************************************/
 /***/ ((module) => {
 
-// fast apply, http://jsperf.lnkit.com/fast-apply/5
+// fast apply, https://jsperf.lnkit.com/fast-apply/5
 module.exports = function (fn, args, that) {
   var un = that === undefined;
   switch (args.length) {
@@ -17159,7 +17159,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
           var err = new Error(
             'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
             'Use `PropTypes.checkPropTypes()` to call them. ' +
-            'Read more at http://fb.me/use-check-prop-types'
+            'Read more at https://fb.me/use-check-prop-types'
           );
           err.name = 'Invariant Violation';
           throw err;
@@ -17588,7 +17588,7 @@ if (true) {
   var ReactIs = __webpack_require__(/*! react-is */ "../node_modules/react-is/index.js");
 
   // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
+  // https://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
   module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "../node_modules/prop-types/factoryWithTypeCheckers.js")(ReactIs.isElement, throwOnDirectAccess);
 } else {}

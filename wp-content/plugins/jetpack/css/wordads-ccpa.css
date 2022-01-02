@@ -28,12 +28,12 @@
   background-attachment: scroll !important;
   background-color: transparent !important;
   background-image: none !important;
-  /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+  /* This rule affects the use of pngfix JavaScript https://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
   background-position: 0 0 !important;
   background-repeat: repeat !important;
   border-color: black !important;
   border-color: currentColor !important;
-  /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+  /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <https://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
   border-radius: 0 !important;
   border-style: none !important;
   border-width: medium !important;
@@ -87,7 +87,7 @@
   word-spacing: normal !important;
   z-index: auto !important;
   /* CSS3 */
-  /* Including all prefixes according to http://caniuse.com/ */
+  /* Including all prefixes according to https://caniuse.com/ */
   /* CSS Animations don't cascade, so don't require resetting */
   background-origin: padding-box !important;
   -webkit-background-clip: border-box !important;
