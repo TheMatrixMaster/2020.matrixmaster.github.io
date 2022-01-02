@@ -1,0 +1,1 @@
+<div class="sinatra-logo si-header-element"></div>

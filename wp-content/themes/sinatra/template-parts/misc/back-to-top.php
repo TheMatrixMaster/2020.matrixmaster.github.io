@@ -1,0 +1,1 @@
+<a href="#" id="si-scroll-top" class="si-smooth-scroll" title=""></a>
